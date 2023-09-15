@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>課題13章です。</title>
+  <meta charset="utf-8">
+  <meta name="description" content="ハンバーガーメニューを実装しよう。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ヘッダー　-->
+  <header>
+    <!-- ロゴ　-->
+    <a href="index.html" id="logo"><img src="kadai_013/images/logo.png" alt="トップページに戻る"></a>
+
+    <!-- PC用ナビゲーション　-->
+    <nav id="nav-pc">
+      <a href="index.html" #CONCEPT>CONCEPT</a>
+      <a href="index.html" #PRODUCT>PRODUCT</a>
+      <a href="index.html" #CONTACT>CONTACT</a>
+    </nav>
+    <!-- SP用ボタン　-->
+    <img id="menu-sp" src="kadai_013/images/button-menu.png" alt="ナビゲーションを開く"
+      onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <nav id="nav-sp">
+      <img id="close" src="kadai_013/images/button-close.png" alt="ナビゲーションを閉じる"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+          src="kadai_013/images/button-close.png" alt="トップページに戻る"></a>
+      <a class="menu" href="index.html#CONCEPT"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+      <a class="menu" href="index.html#PRODUCT"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+      <a class="menu" href="index.html#CONTACT"
+        onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+    </nav>
+
+  </header>
+</body>
+<main>
+  <section id="main-visual">
+    <div id=" main-message">
+      <h1>Organic Cafe</h1>
+      <p>自家焙煎コーヒーが買えるお店</p>
+    </div>
+    <img src="kadai_013/images/main-image.jpg" alt="コーヒーを注ぐ写真">
+  </section>
+
+</main>
+
+</html>
